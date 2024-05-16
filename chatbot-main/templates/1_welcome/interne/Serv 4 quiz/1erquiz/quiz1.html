@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personality Quiz</title>
+    <link rel="stylesheet" 
+    type="text/css" href="{{ url_for('static', filename='1_welcome/interne/Serv 4 quiz/1erquiz/quiz1.css') }}">
+</head>
+<body>
+   
+<section>
+    <div class="quizContainer">  <button class="buttonBack"><a class="butBack" href="../../landingPage/landingPage.html">Back </a> </button>
+        <h1>Personality Quiz</h1>
+        <div id="quiz">
+        </div>
+        <br>
+        <button class="submit" onclick="submitQuiz()">Result</button>
+        <div id="result"></div>
+<br>
+<button class="submit" ><a class="buttonquiz" href="{{url_for('quiz2')}}"> More</a></button>
+    </div>
+</section>
+    <script src="{{ url_for('static', filename='1_welcome/interne/Serv 4 quiz/1erquiz/quiz1.js') }}"></script>
+</body>
+</html>

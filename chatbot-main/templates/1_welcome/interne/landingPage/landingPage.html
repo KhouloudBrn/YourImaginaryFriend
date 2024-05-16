@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-GLhlTQ8i6Dau8dHRVHw2Llcc7FX/BaF+UKL8it2fCWNIpG9tbf3zj2N2tMN4M"
+    crossorigin="anonymous">
+    <link rel="stylesheet" 
+    type="text/css" href="{{ url_for('static', filename='1_welcome/interne/landingPage/landingPage.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+        <header>
+            <a href=""> <img class="logo" src="{{url_for('static', filename='1_welcome/images/logo8.PNG')}}"logo"></a>
+            <ul>
+                <li><a href="{{url_for('index')}}"> Home</a></li>
+
+              <li class="has-submenu">
+                    <a href="#">Services</a>
+                    <ul class="submenu">
+                        <li><a href="{{url_for('advise')}}">Advice</a></li>
+                        <li><a href="{{url_for('videos')}}">Success-Story</a></li>
+                        <li><a href="{{url_for('infos')}}">Information</a></li>
+
+                        <li><a href="{{url_for('guide')}}">Quiz</a></li>
+
+                        <li><a href="{{url_for('motivation')}}">Motivation</a></li>
+                    </ul>
+                </li>
+
+
+                <li><a href="{{url_for('aboutus')}}"> About Us</a></li>
+                <li><a href="{{url_for('contactus')}}"> Contact Us</a></li>
+            </ul>
+        </header>
+       
+
+    <section class="main">
+
+<img src="{{url_for('static', filename='1_welcome/images/stars1.webp')}}" alt="" id="stars">
+<h2 id="novil">Your imaginary friend</h2>
+<img src="{{url_for('static', filename='1_welcome/images/moon2.webp')}}" alt="" id="moon">
+<img src="{{url_for('static', filename='1_welcome/images/mountains3.webp')}}" alt="" id="mountains3">
+<img src="{{url_for('static', filename='1_welcome/images/mountains4.webp')}}" alt="" id="mountains4">
+<img src="{{url_for('static', filename='1_welcome/images/boat6.webp')}}" alt="" id="boat">
+<img src="{{url_for('static', filename='1_welcome/images/river5.webp')}}" alt="" id="river">
+<img src="{{url_for('static', filename='1_welcome/images/mountains7.webp')}}" alt="" id="mountains7">
+
+
+    </section>
+    <br>
+    <br>
+    <br>
+
+    <div class="content">
+<p> Find a soul that talk to you</p>
+<p>and listen ..</p>
+<br>
+<br>
+<button class="login"><a href="{{url_for('chat')}}">Let's talk </a></button>
+ </div>
+
+ <footer>
+    <div class="footer-content">
+
+        
+
+
+        <div class="social-icons">
+            <a href="#"><img src="{{url_for('static', filename='1_welcome/images/linkedin-icon.jpg')}}" alt="Facebook"></a>
+            <a href="#"><img src="{{url_for('static', filename='1_welcome/images/twitter-icon.jpg')}}" alt="Twitter"></a>
+            <a href="#"><img src="{{url_for('static', filename='1_welcome/images/instagram-icon.jpg')}}" alt="Instagram"></a>
+        
+</div>
+<button id="scrollToTopBtn"><img src="{{url_for('static', filename='1_welcome/images/flech.jpg')}}" alt="Scroll to Top" ></button>
+<p>&copy;  </p>
+</div>
+</footer>
+
+ 
+   <script src="{{ url_for('static', filename='1_welcome/interne/landingPage/landingPage.js') }}"></script> 
+</body>
+</html>
