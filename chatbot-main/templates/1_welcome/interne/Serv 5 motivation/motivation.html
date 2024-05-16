@@ -10,7 +10,7 @@
 <body>
   <div class="container">
 <header>
-    <a href="{{url_for('landingpage')}}"><img class="logo" src="image/logo8.PNG" alt="logo"></a>
+    <a href="{{url_for('landingpage')}}"><img class="logo" src="{{url_for('static', filename='1_welcome/images/logo8.PNG')}}" alt="logo"></a>
     <ul>
         <li><a href="{{url_for('landingpage')}}"> Home</a></li>
         <li><a href=""> Services</a></li>
@@ -28,38 +28,38 @@
 <a href=""> All images</a>
     </div>
     <div class="image">
-        <img src="image/im1.jpg" class="img" height="280" width="280">
+        <img src="{{url_for('static', filename='1_welcome/interne/Serv 5 motivation/image/im1.jpg')}}" class="img" height="280" width="280">
         
     </div>
 </div>
 
 <div class="icons">
-    <img onmouseenter="pictures(this.src) ; colors('#F0B27A')" src="image/im1.jpg" alt=""> 
-    <img onmouseenter="pictures(this.src) ; colors('rgb(157, 201, 201)')" src="image/im2.jpg" alt="">
-    <img onmouseenter="pictures(this.src) ; colors('rgb(105, 75, 192)')" src="image/im18.jpg" alt=""> 
-    <img onmouseenter="pictures(this.src) ; colors('#85929E ')" src="image/im6.jpg" alt=""> 
-    <img onmouseenter="pictures(this.src)  ; colors('#cc914c')" src="image/im13.jpg" alt="">
-    <img onmouseenter="pictures(this.src)  ; colors('#0985a9')" src="image/im23.jpg" alt=""> 
-    <img onmouseenter="pictures(this.src)  ; colors('#675b9f')" src="image/im19.jpg" alt=""> 
-    <img onmouseenter="pictures(this.src)  ; colors('#5a5f86')" src="image/im20.jpg" alt="">  
-    <img onmouseenter="pictures(this.src)  ; colors('#c19c8b')" src="image/im14.jpg" alt=""> 
-    <img onmouseenter="pictures(this.src)  ; colors('#89519f')" src="image/im15.jpg" alt=""> 
-    <img onmouseenter="pictures(this.src)  ; colors('#bf9ae0')" src="image/im16.jpg" alt=""> 
-    <img onmouseenter="pictures(this.src)  ; colors('#f28bcd')" src="image/im17.jpg" alt=""> 
-    <img onmouseenter="pictures(this.src)  ; colors('#8d3e68')" src="image/im7.jpg" alt=""> 
-    <img onmouseenter="pictures(this.src)  ; colors('rgb(215, 198, 176)')" src="image/im8.jpg" alt="">
-    <img onmouseenter="pictures(this.src)  ; colors('#89519f')" src="image/im25.jpg" alt=""> 
-    <img onmouseenter="pictures(this.src)  ; colors('#A569BD')" src="image/im21.jpg" alt="">  
-    <img onmouseenter="pictures(this.src)  ; colors('#89519f')" src="image/im3.jpg" alt="">
-    <img onmouseenter="pictures(this.src)  ; colors('#f28bcd')" src="image/im4.jpg" alt="">
-    <img onmouseenter="pictures(this.src)  ; colors('#0c8174')" src="image/im5.jpg" alt="">
-    <img onmouseenter="pictures(this.src)  ; colors('#bccdff')" src="image/im22.jpg" alt="">
-    <img onmouseenter="pictures(this.src)  ; colors('#edc4b1')" src="image/im24.jpg" alt=""> 
-    <img onmouseenter="pictures(this.src)  ; colors('#c19c8b')" src="image/im9.jpg" alt="">
-    <img onmouseenter="pictures(this.src)  ; colors('#0f1663')" src="image/im10.jpg" alt=""> 
-    <img onmouseenter="pictures(this.src)  ; colors('#c47a89')" src="image/im11.jpg" alt=""> 
-    <img onmouseenter="pictures(this.src)  ; colors('#ff9baf')" src="image/im12.jpg" alt=""> 
-    <img onmouseenter="pictures(this.src)  ; colors('#000b7e')" src="image/im26.jpg" alt="">  
+    <img onmouseenter="pictures(this.src) ; colors('#F0B27A')" src="{{url_for('static', filename='1_welcome/interne/Serv 5 motivation/image/im1.jpg')}}" alt=""> 
+    <img onmouseenter="pictures(this.src) ; colors('rgb(157, 201, 201)')" src="{{url_for('static', filename='1_welcome/interne/Serv 5 motivation/image/im2.jpg')}}" alt="">
+    <img onmouseenter="pictures(this.src) ; colors('rgb(105, 75, 192)')" src="{{url_for('static', filename='1_welcome/interne/Serv 5 motivation/image/im18.jpg')}}" alt=""> 
+    <img onmouseenter="pictures(this.src) ; colors('#85929E ')" src="{{url_for('static', filename='1_welcome/interne/Serv 5 motivation/image/im6.jpg')}}" alt=""> 
+    <img onmouseenter="pictures(this.src)  ; colors('#cc914c')" src="{{url_for('static', filename='1_welcome/interne/Serv 5 motivation/image/im13.jpg')}}" alt="">
+    <img onmouseenter="pictures(this.src)  ; colors('#0985a9')" src="{{url_for('static', filename='1_welcome/interne/Serv 5 motivation/image/im23.jpg')}}" alt=""> 
+    <img onmouseenter="pictures(this.src)  ; colors('#675b9f')" src="{{url_for('static', filename='1_welcome/interne/Serv 5 motivation/image/im19.jpg')}}" alt=""> 
+    <img onmouseenter="pictures(this.src)  ; colors('#5a5f86')" src="{{url_for('static', filename='1_welcome/interne/Serv 5 motivation/image/im20.jpg')}}" alt="">  
+    <img onmouseenter="pictures(this.src)  ; colors('#c19c8b')" src="{{url_for('static', filename='1_welcome/interne/Serv 5 motivation/image/im14.jpg')}}" alt=""> 
+    <img onmouseenter="pictures(this.src)  ; colors('#89519f')" src="{{url_for('static', filename='1_welcome/interne/Serv 5 motivation/image/im15.jpg')}}" alt=""> 
+    <img onmouseenter="pictures(this.src)  ; colors('#bf9ae0')" src="{{url_for('static', filename='1_welcome/interne/Serv 5 motivation/image/im16.jpg')}}" alt=""> 
+    <img onmouseenter="pictures(this.src)  ; colors('#f28bcd')" src="{{url_for('static', filename='1_welcome/interne/Serv 5 motivation/image/im17.jpg')}}" alt=""> 
+    <img onmouseenter="pictures(this.src)  ; colors('#8d3e68')" src="{{url_for('static', filename='1_welcome/interne/Serv 5 motivation/image/im7.jpg')}}" alt=""> 
+    <img onmouseenter="pictures(this.src)  ; colors('rgb(215, 198, 176)')" src="{{url_for('static', filename='1_welcome/interne/Serv 5 motivation/image/im8.jpg')}}" alt="">
+    <img onmouseenter="pictures(this.src)  ; colors('#89519f')" src="{{url_for('static', filename='1_welcome/interne/Serv 5 motivation/image/im25.jpg')}}" alt=""> 
+    <img onmouseenter="pictures(this.src)  ; colors('#A569BD')" src="{{url_for('static', filename='1_welcome/interne/Serv 5 motivation/image/im21.jpg')}}" alt="">  
+    <img onmouseenter="pictures(this.src)  ; colors('#89519f')" src="{{url_for('static', filename='1_welcome/interne/Serv 5 motivation/image/im3.jpg')}}" alt="">
+    <img onmouseenter="pictures(this.src)  ; colors('#f28bcd')" src="{{url_for('static', filename='1_welcome/interne/Serv 5 motivation/image/im4.jpg')}}" alt="">
+    <img onmouseenter="pictures(this.src)  ; colors('#0c8174')" src="{{url_for('static', filename='1_welcome/interne/Serv 5 motivation/image/im5.jpg')}}" alt="">
+    <img onmouseenter="pictures(this.src)  ; colors('#bccdff')" src="{{url_for('static', filename='1_welcome/interne/Serv 5 motivation/image/im22.jpg')}}" alt="">
+    <img onmouseenter="pictures(this.src)  ; colors('#edc4b1')" src="{{url_for('static', filename='1_welcome/interne/Serv 5 motivation/image/im24.jpg')}}" alt=""> 
+    <img onmouseenter="pictures(this.src)  ; colors('#c19c8b')" src="{{url_for('static', filename='1_welcome/interne/Serv 5 motivation/image/im9.jpg')}}" alt="">
+    <img onmouseenter="pictures(this.src)  ; colors('#0f1663')" src="{{url_for('static', filename='1_welcome/interne/Serv 5 motivation/image/im10.jpg')}}" alt=""> 
+    <img onmouseenter="pictures(this.src)  ; colors('#c47a89')" src="{{url_for('static', filename='1_welcome/interne/Serv 5 motivation/image/im11.jpg')}}" alt=""> 
+    <img onmouseenter="pictures(this.src)  ; colors('#ff9baf')" src="{{url_for('static', filename='1_welcome/interne/Serv 5 motivation/image/im12.jpg')}}" alt=""> 
+    <img onmouseenter="pictures(this.src)  ; colors('#000b7e')" src="{{url_for('static', filename='1_welcome/interne/Serv 5 motivation/image/im26.jpg')}}" alt="">  
     
 </div>
 
