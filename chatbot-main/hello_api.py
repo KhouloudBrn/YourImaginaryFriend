@@ -12,7 +12,7 @@ llm = OpenAI(
 )
 print("OPENAI_API_KEY="+os.environ['OPENAI_API_KEY'])
 
-system_prompt = """Make sure all responses are in French.
+system_prompt = """Make sure all responses are in English.
     DESCRIPTION:
 """
 user_input = """what is the capital of Tunisia"""

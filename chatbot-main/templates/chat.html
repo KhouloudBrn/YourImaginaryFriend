@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='serv6/design.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='serv6/design.css') }}">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chatbot Interface</title>
-   
 </head>
-
-
-<body> <section>
-    <div id="chat-container">
-        <div id="chat-messages"></div>
-        <div class="chat-header"> <button class="buttonBack"><a class="butBack" href="{{url_for('landingpage')}}">Back </a> </button>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <button class="buttonBack"><a class="butBack" href="{{url_for('landingpage')}}">Back</a></button>
             <h1>Your imaginary friend</h1>
         </div>
-        <div class="chat-body" id="chat">
+        <div class="chat-messages" id="chat-messages">
             <div class="chat-message bot-message">
-                <p>Find a soul that speaks to you and listen..</p>
+                <p>Welcome! How can I assist you today?</p>
             </div>
-        <input type="text" id="user-input" placeholder="Type your message...">
-        <button onclick="sendMessage()">Let's talk</button> 
-        <button><a href="{{url_for('landingpage')}}" style="text-decoration: none; color: white;">Goob bye</a></button>
+        </div>
+        <div class="input-container">
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button onclick="sendMessage()">Let's talk</button>
+            <button><a href="{{url_for('landingpage')}}" style="text-decoration: none; color: white;">Goodbye</a></button>
+        </div>
     </div>
-</section>
     <script>
         function appendMessage(message, sender) {
             const chatMessages = document.getElementById('chat-messages');
             const messageElement = document.createElement('div');
+            messageElement.className = 'chat-message';
             messageElement.textContent = `${sender}: ${message}`;
-            chatMessages.appendChild(messageElement);
+            if (sender === 'AI') {
+                messageElement.classList.add('bot-message');
+            } else {
+                messageElement.classList.add('user-message');
+            }
+            chatMessages.prepend(messageElement);
+            
         }
 
         function sendMessage() {
