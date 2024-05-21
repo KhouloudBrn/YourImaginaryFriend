@@ -1,2 +1,2 @@
 # chatbot
-ceci est un chatbot
+ceci est une presentation
